@@ -13,6 +13,7 @@ from .gradio import *
 from .code_interpreter import PythonCodeInterpreter
 from .file_operation import WriteFile, ReadFile
 from .duckduckgo import DuckDuckGo
+from .pdf_reader import PDFReader
 
 
 def load_tools(name: str) -> BaseTool:
@@ -29,6 +30,7 @@ def load_tools(name: str) -> BaseTool:
         "text_to_video": TextToVideo,
         "image_to_prompt": ImageToPrompt,
         "search_doc": SearchDoc,
+        "pdf_reader": PDFReader,
         "bash_shell": RunShell,
         "get_future_weather": GetFutureWeather,
         "get_today_weather": GetTodayWeather,
